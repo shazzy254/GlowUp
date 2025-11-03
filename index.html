@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GlowUp Skincare</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="header-left">
+        <a href="index.html">
+          <svg width="250" height="80"
+          xlmns="http://www.w3.org/2000/svg">
+          <!--Text-->
+          <text x="0" y="60"
+          font-family="Poppins, san-serif"
+          font-size="60" font-weight="600"
+          fill="#FF6F61">GlowUp</text>
+        </svg>
+        </a>
+        <div class="divider hide-mobile"></div>
+        <a href="#" class="home hide-mobile">Home</a>
+      </div>
+
+      <nav>
+        <a href="#" class="menu-open hide-desktop">
+          <img src="menu.svg" alt="Open menu" />
+        </a>
+        <ul>
+          <li class="hide-desktop">
+            <a href="#" class="menu-close">
+              <img src="close.svg" alt="Close menu" />
+            </a>
+          </li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Ingredients</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="typewriter">Your skin deserves the <img src="glow.svg" alt="Text that says glow" /></h1>
+      <p class="subhead">
+        ...gentle formulas. Radiant results. Made for every skin type, with love from Nairobi.
+      </p>
+      <a href="#" class="primary-cta">Shop GlowUp</a>
+    </main>
+
+    <div class="product-container">
+      <div class="product">
+        <img src="skincare.jpg" alt="Skincare product illustration" />
+        <div class="inner-circle"></div>
+        <div class="outer-circle"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menu = document.querySelector('nav ul');
+    const menuBtn = document.querySelector('.menu-open');
+    const closeBtn = document.querySelector('.menu-close');
+
+    menuBtn.addEventListener('click', () => {
+      menu.classList.add('open');
+    });
+
+    closeBtn.addEventListener('click', () => {
+      menu.classList.remove('open');
+    });
+  </script>
+</body>
+</html>
